@@ -1,0 +1,115 @@
+{
+  "FactoryBot - define":{
+		"prefix": "fbdef",
+		"body": [
+			"FactoryBot.define do",
+			"\t	$1",
+			"end"
+		],
+		"description": "FactoryBot - define"
+	},	
+	"FactoryBot - factory": {
+		"prefix": "fac",
+		"body": [
+			"factory :${1:name}${2:${3:, class: ${4:model}}${5:, parent: :${6:factory}}${7:, aliases: [:${8:alias}]}} do",
+			"  $0",
+			"end"
+		],
+		"description": "FactoryBot - factory"
+	},	
+  "FactoryBot - sequence": {   
+    "prefix": "seq",   
+    "body": [  
+        "sequence(:${1:attribute}${2:, initial value}) { |n| ${0:"#{n\}"} }"
+    ],   
+    "description": "FactoryBot - sequence"   
+  },
+  "FactoryBot - association": {   
+    "prefix": "ass",   
+    "body": [  
+      "association :$1, factory: :${2:$1}${3:, strategy: :${4:build}}"
+    ],   
+    "description": "FactoryBot - association"   
+  },
+  "FactoryBot - trait": {   
+    "prefix": "fbtt",   
+    "body": [  
+      "trait :$1 do",
+      "\t $0",
+      "end"
+    ],   
+    "description": "FactoryBot - trait"   
+  },
+  "FactoryBot - trasient": {   
+    "prefix": "fbtr",   
+    "body": [  
+      "transient do",
+      "\t $0",
+      "end"
+    ],   
+    "description": "FactoryBot - trasient"   
+  },  
+  "FactoryBot - add_attribute": {   
+    "prefix": "fbaa",   
+    "body": [  
+      "add_attribute(:$1) { $0 }"   
+    ],   
+    "description": "FactoryBot - add_attribute"   
+  },
+  "FactoryBot - after": {   
+    "prefix": "after",   
+    "body": [  
+        "after(:${1:create}) { |${2:resource}| $0 }"
+    ],   
+    "description": "FactoryBot - after"   
+  },  
+  "FactoryBot - before": {   
+    "prefix": "before",   
+    "body": [  
+      "before(:create) { |${1:resource}| $0 }"   
+    ],   
+    "description": "FactoryBot - before"   
+  },  
+  "FactoryBot - create": {   
+    "prefix": "fbc",   
+    "body": [  
+      "create(:${1:model}${2:, ${3:attributes}})"   
+    ],   
+    "description": "FactoryBot - create"   
+  },
+  "FactoryBot - create_list": {   
+    "prefix": "fbcl",   
+    "body": [  
+      "create_list(:${1:model}, ${2:3}${3:, ${4:attributes}})"
+    ],   
+    "description": "FactoryBot - create_list"   
+  },
+  "FactoryBot - build": {   
+    "prefix": "fbb",   
+    "body": [  
+      "build(:${1:model}${2:, ${3:attributes}})"   
+    ],   
+    "description": "FactoryBot - build"   
+  },
+  "FactoryBot - build_stubbed": {   
+    "prefix": "fbbs",   
+    "body": [  
+      "build_stubbed(:${1:model}${2:, ${3:attributes}})"   
+    ],   
+    "description": "FactoryBot - build_stubbed"   
+  },
+  "FactoryBot - build_list": {   
+    "prefix": "fbbl",   
+    "body": [  
+      "build_list(:${1:model}, ${2:3}${3:, ${4:attributes}})"   
+    ],   
+    "description": "FactoryBot - build_list"   
+  },
+  "FactoryBot - attributes_for": {   
+    "prefix": "fbaf",   
+    "body": [  
+      "attributes_for(:${1:model}${2:, ${3:attributes}})"   
+    ],   
+    "description": "FactoryBot - attributes_for"   
+  } 
+}

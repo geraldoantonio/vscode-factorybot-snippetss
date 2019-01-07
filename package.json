@@ -1,0 +1,31 @@
+{
+    "author": {
+        "name" : "Geraldo Júnior",
+        "email" : "junior.bimbo@gmail.com"
+	},
+    "name": "factorybot-snippets",
+    "displayName": "factorybot-snippets",
+    "description": "Snippets for FactoryBot",
+    "version": "0.0.1",
+    "publisher": "geraldo",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "icon": "images/factorybot.png",
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "ruby",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/geraldoantonio/vscode-factorybot-snippetss"
+    },
+    "license": "MIT"
+}
