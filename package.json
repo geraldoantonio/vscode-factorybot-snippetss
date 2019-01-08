@@ -1,15 +1,15 @@
-{
+{ 
     "author": {
         "name" : "Geraldo Júnior",
         "email" : "junior.bimbo@gmail.com"
-	},
-    "name": "factorybot-snippets",
-    "displayName": "factorybot-snippets",
-    "description": "Snippets for FactoryBot",
+    },
+    "name": "bimbo-factorybot-snippets",
+    "displayName": "bimbo-factorybot-snippets",
+    "description": "FactoryBot Code Snippets for Ruby code",
+    "publisher" : "bimbo-factorybot-snippets",
     "version": "0.0.1",
-    "publisher": "geraldo",
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.30.0"
     },
     "icon": "images/factorybot.png",
     "categories": [
@@ -26,6 +26,5 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/geraldoantonio/vscode-factorybot-snippetss"
-    },
-    "license": "MIT"
+    }
 }
